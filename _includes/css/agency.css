@@ -4,17 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
- .navbar-brand img.d-inline-block {
-    filter: invert(1);
-    max-height: 30px;
-}
 
-@media(min-width:768px) {
-    .navbar-brand img.d-inline-block {
-        filter: invert(1);
-        max-height: 60px;
-    }
-}
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -875,4 +865,17 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+
+img.d-inline-block.align-top {
+    filter: invert(1);
+    max-height: 30px;
+}
+
+@media(min-width:768px) {
+img.d-inline-block {
+        filter: invert(1);
+        max-height: 60px;
+    }
 }
